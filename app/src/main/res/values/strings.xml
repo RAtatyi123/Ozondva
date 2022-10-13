@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Ozonzonzon</string>
+    <string name="app_name">7 botl</string>
+    <string name="Основное">Основное</string>
+    <string name="Популярное">Популярное ></string>
+    <string name="Ебейшее">Ебейшее ></string>
+    <string name="Ахуенное">Ахуенное></string>
 </resources>

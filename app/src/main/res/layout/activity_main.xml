@@ -6,37 +6,287 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="XYI 228"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/Основное"
+        android:textColor="#090101"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:text="Залупа этот ваш git"
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
-    <ImageView
-        android:id="@+id/imageView"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="105dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="56dp"
+                android:contentDescription="@string/app_name"
+
+                android:onClick="hendselector"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/avto" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                app:layout_constraintTop_toTopOf="@+id/imageButton3"
+                app:srcCompat="@drawable/car" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton4"
+                app:layout_constraintTop_toTopOf="@+id/imageButton4"
+                app:srcCompat="@drawable/car2" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton5"
+                app:layout_constraintTop_toTopOf="@+id/imageButton5"
+                app:srcCompat="@drawable/car2" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton6"
+                app:layout_constraintTop_toTopOf="@+id/imageButton6"
+                app:srcCompat="@drawable/avto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Популярное"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
 
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="105dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="56dp"
+                android:contentDescription="@string/app_name"
+
+                android:onClick="hendselector"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/avto" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselecto10"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton8"
+                app:layout_constraintTop_toTopOf="@+id/imageButton8"
+                app:srcCompat="@drawable/car" />
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton9"
+                app:layout_constraintTop_toTopOf="@+id/imageButton9"
+                app:srcCompat="@drawable/car2" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton11"
+                app:layout_constraintTop_toTopOf="@+id/imageButton11"
+                app:srcCompat="@drawable/car2" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton12"
+                app:layout_constraintTop_toTopOf="@+id/imageButton12"
+                app:srcCompat="@drawable/avto" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView4"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/imageButtong"
+                android:layout_width="105dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="56dp"
+                android:contentDescription="@string/app_name"
+
+                android:onClick="hendselectora"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/avto" />
+
+            <ImageButton
+                android:id="@+id/imageButton9g"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselecto10"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButtong"
+                app:layout_constraintTop_toTopOf="@+id/imageButtong"
+                app:srcCompat="@drawable/car" />
+
+            <ImageButton
+                android:id="@+id/imageButton11g"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton9g"
+                app:layout_constraintTop_toTopOf="@+id/imageButton9g"
+                app:srcCompat="@drawable/car2" />
+
+            <ImageButton
+                android:id="@+id/imageButton12g"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton11g"
+                app:layout_constraintTop_toTopOf="@+id/imageButton11g"
+                app:srcCompat="@drawable/car2" />
+
+            <ImageButton
+                android:id="@+id/imageButton13g"
+                android:layout_width="101dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="44dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="hendselector"
+                android:scaleType="center"
+                app:layout_constraintStart_toEndOf="@+id/imageButton12g"
+                app:layout_constraintTop_toTopOf="@+id/imageButton12g"
+                app:srcCompat="@drawable/avto" />
+
+            <TextView
+                android:id="@+id/abobka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/Ахуенное"
+                android:textColor="#090101"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton9g" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Ебейшее"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
